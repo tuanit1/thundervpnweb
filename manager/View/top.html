@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .text{
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        a,u {
+            color:#2A6759;
+            text-decoration:none;
+        }
+        .btn{
+            width: 220px;
+            border: solid 2px #2A6759;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            border-radius: 15px;
+            background-color: white;
+        }
+    
+    
+    </style>
+    
+    <table style="margin-top:15px" width="1400" align=center height="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td height="70" align="center">
+               <button id="btn_proxy" class="btn"> <a id ="a_proxy" onclick="setFocus(1)" class="text" href="ProxyManage.php?selected_country=0" target="right" >Quản lý Proxy</a></button>
+            </td>
+            <td height="70" align="center">
+                <button id="btn_country" class="btn"> <a id ="a_country" onclick="setFocus(2)" class="text" href="CountryManage.php" target="right" >Quản lý Country</a></button>
+            </td>
+            <td height="70" align="center">
+                <button id="btn_user" class="btn"> <a id ="a_user" onclick="setFocus(3)" class="text" href="UserManage.php" target="right" >Quản lý User</a></button>
+            </td>
+            <td height="70" align="center">
+                <button id="btn_feedback" class="btn"> <a id ="a_feedback" onclick="setFocus(4)" class="text" href="Feedback.php" target="right" >Xem Feedback</a></button>
+            </td>
+            <td height="70" align="center">
+                <button id="btn_setting" class="btn"> <a id ="a_setting" onclick="setFocus(5)" class="text" href="Setting.php" target="right" >Cài đặt khác</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <div style="background-color:#2A6759; height: 2px; margin-top: 10px;"></div>
+            </td>
+        </tr>
+    </table>
+</body>
+<script>
+    function setFocus(key){
+        switch(key){
+            case 1:
+                document.getElementById("a_proxy").style.color = "white";
+                document.getElementById("a_country").style.color = "#2A6759";
+                document.getElementById("a_user").style.color = "#2A6759";
+                document.getElementById("a_feedback").style.color = "#2A6759";
+                document.getElementById("a_setting").style.color = "#2A6759";
+
+                document.getElementById("btn_proxy").style.background = "#13A684";
+                document.getElementById("btn_country").style.background = "white";
+                document.getElementById("btn_user").style.background = "white";
+                document.getElementById("btn_feedback").style.background = "white";
+                document.getElementById("btn_setting").style.background = "white";
+
+                break;
+            case 2:
+                document.getElementById("a_proxy").style.color = "#2A6759";
+                document.getElementById("a_country").style.color = "white";
+                document.getElementById("a_user").style.color = "#2A6759";
+                document.getElementById("a_feedback").style.color = "#2A6759";
+                document.getElementById("a_setting").style.color = "#2A6759";
+
+                document.getElementById("btn_proxy").style.background = "white";
+                document.getElementById("btn_country").style.background = "#13A684";
+                document.getElementById("btn_user").style.background = "white";
+                document.getElementById("btn_feedback").style.background = "white";
+                document.getElementById("btn_setting").style.background = "white";
+
+                break;
+            case 3:
+                document.getElementById("a_proxy").style.color = "#2A6759";
+                document.getElementById("a_country").style.color = "#2A6759";
+                document.getElementById("a_user").style.color = "white";
+                document.getElementById("a_feedback").style.color = "#2A6759";
+                document.getElementById("a_setting").style.color = "#2A6759";
+
+                document.getElementById("btn_proxy").style.background = "white";
+                document.getElementById("btn_country").style.background = "white";
+                document.getElementById("btn_user").style.background = "#13A684";
+                document.getElementById("btn_feedback").style.background = "white";
+                document.getElementById("btn_setting").style.background = "white";
+                
+                break;
+            case 4:
+                document.getElementById("a_proxy").style.color = "#2A6759";
+                document.getElementById("a_country").style.color = "#2A6759";
+                document.getElementById("a_user").style.color = "#2A6759";
+                document.getElementById("a_feedback").style.color = "white";
+                document.getElementById("a_setting").style.color = "#2A6759";
+
+                document.getElementById("btn_proxy").style.background = "white";
+                document.getElementById("btn_country").style.background = "white";
+                document.getElementById("btn_user").style.background = "white";
+                document.getElementById("btn_feedback").style.background = "#13A684";
+                document.getElementById("btn_setting").style.background = "white";
+                break;
+
+            case 5:
+                document.getElementById("a_proxy").style.color = "#2A6759";
+                document.getElementById("a_country").style.color = "#2A6759";
+                document.getElementById("a_user").style.color = "#2A6759";
+                document.getElementById("a_feedback").style.color = "#2A6759";
+                document.getElementById("a_setting").style.color = "white";
+
+                document.getElementById("btn_proxy").style.background = "white";
+                document.getElementById("btn_country").style.background = "white";
+                document.getElementById("btn_user").style.background = "white";
+                document.getElementById("btn_feedback").style.background = "white";
+                document.getElementById("btn_setting").style.background = "#13A684";
+                break;
+        }
+    }
+</script>
+</html>
